@@ -1,0 +1,46 @@
+<ion-content class="background">
+    <ion-header>
+  
+    <ion-navbar>
+      
+    </ion-navbar>
+  
+  </ion-header>
+  <img src="assets/images/icon_inverted_white.png" style="height: 170px; width: 150px;" alt="Washing">
+  <h1 class="bb_text">Broadway Bubbles </h1>
+    <ion-card>
+      <ion-card-header>
+        REGISTER
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list no-lines>
+          <form [formGroup]="signup_form">
+          <ion-item>
+              <ion-label floating>Name</ion-label>
+              <ion-input type="text" formControlName="name" name="name" [(ngModel)]="data.name" required></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>User Name</ion-label>
+                <ion-input type="text" formControlName="username" name="username" [(ngModel)]="data.username" required></ion-input>
+              </ion-item>
+          <ion-item>
+            <ion-label floating>E-Mail ID</ion-label>
+            <ion-input type="email" formControlName="email" name="email" [(ngModel)]="data.email" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password" formControlName="password" name="password" [(ngModel)]="data.password" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>Confirm Password</ion-label>
+            <ion-input type="password" formControlName="cpassword" name="cpassword" [(ngModel)]="data.cpassword" required></ion-input>
+          </ion-item>
+  
+          <button ion-button color="primary" block class="register" (click)="signup()" [disabled]="!signup_form.valid">REGISTER</button>
+          </form>
+        </ion-list>
+  
+      </ion-card-content>
+    </ion-card>
+  
+  </ion-content>

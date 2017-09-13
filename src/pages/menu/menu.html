@@ -1,0 +1,49 @@
+<ion-menu [content]="content" >
+  
+  <ion-content class="card-background-page">
+
+    <ion-list>
+            <div class="card-title">{{ userDetails.name }}</div>
+            <div class="card-subtitle">{{ userDetails.email }}</div>
+      <ion-item  menuclose>
+        <ion-icon name="card" item-left large></ion-icon>
+        <h2>Orders</h2>
+        <p>check your orders</p>
+      </ion-item>
+
+      <ion-item  (click)="onGoToAccount()" menuclose>
+          <ion-icon name="person" item-left large></ion-icon>
+          <h2>Account</h2>
+          <p>your account information</p>
+      </ion-item>
+
+      <ion-item  (click)="onGoToPricing()" menuclose>
+          <ion-icon name="cash" item-left large></ion-icon>
+          <h2>Pricing</h2>
+          <p>check price for items</p>
+      </ion-item>
+
+      <ion-item  (click)="onGoToHelp()" menuclose>
+          <ion-icon name="help-buoy" item-left large></ion-icon>
+          <h2>Help</h2>
+          <p>clarify your doubts</p>
+      </ion-item>
+
+      <ion-item  (click)="onGoToCart()" menuclose>
+        <ion-icon name="cart" item-left large></ion-icon>
+        <h2>Cart</h2>
+        <p>check items in your cart</p>
+      </ion-item>
+
+      <ion-item  (click)="onGoToLogout()" menuclose>
+        <ion-icon name="log-out" item-left large></ion-icon>
+        <h2>Sign Out</h2>
+        <p>of your account</p>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav #content [root]="homePage"></ion-nav>

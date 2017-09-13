@@ -1,0 +1,39 @@
+.card-background-page {
+    background: linear-gradient(10deg, #3ebffb, #4E5EFC );
+    ion-content, ion-item {
+        background: transparent;
+    }
+    ion-card {
+        position: relative;
+        text-align: center;
+        margin: 0px !important;
+        width: 100% !important;
+    }
+    ion-list {
+        margin-top: 40%;
+    }
+    h2, p{
+        color: #fff;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    .card-title {
+        position: absolute;
+        top: 5%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+    }
+
+    .card-subtitle {
+        position: absolute;
+        top: 12%;
+        font-size: 1.0em;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+    }
+}

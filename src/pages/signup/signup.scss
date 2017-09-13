@@ -1,0 +1,57 @@
+page-signup {
+    .background{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(10deg, #4EE7FC, #4E5EFC );
+    }
+
+    .scroll-content {
+        text-align: center;
+    }
+
+    ion-card.card {
+        background: rgba(232, 230, 230, 0.6px);
+        border-radius: 10px;
+    }
+
+    .item {
+        background: rgba(232, 230, 230, 0px);
+    }
+
+    ion-input {
+        border-bottom: #4E5EFC solid 1px;
+    }
+
+    ion-navbar {
+        background: rgba(232, 230, 230, 0.6px);
+    }
+
+    h1 {
+        color: #fff;
+        margin-top: 20%;
+        font-size: 2.5em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+    }
+
+    button div {
+        margin-left: 10px;
+    }
+
+    .register {
+        margin-top: 10%;
+    }
+
+    .bb_text {
+        margin-top: 0px;
+    }
+
+    .toolbar-background {
+        background:rgba(29, 90, 212, 0.00);
+      }
+
+    img {
+        margin-top: 50px;
+    }
+
+}
